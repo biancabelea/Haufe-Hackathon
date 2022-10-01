@@ -1,14 +1,17 @@
 import React from 'react';
 import Map from './components/Map';
+import Table from './components/Table';
 import './App.css';
-
-// TODO: start here
+import {useState, useEffect} from 'react';
+import axios from 'axios';
 
 function App() {
+
   return (
     <>
-      <h1>Haufe Hackathon</h1>
+      <h1>Puncte colectare selectiva Timisoara</h1>
       <Map/>
+      <Table/>
     </>
   );
 }
