@@ -16,14 +16,14 @@ export default function BasicTable() {
     useEffect(() => {
     const fetchData = async () => {
       const locations = await axios.get("http://localhost:3001");
-      console.log(locations.data);
+      //console.log(locations.data);
       setLocations(locations.data);
     } 
 
     fetchData();
   }, [])
 
-  console.log(locations);
+  //console.log(locations);
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
