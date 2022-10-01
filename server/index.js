@@ -6,7 +6,7 @@ app.use(cors());
 const port = 3001;
 
 app.get('/', async (req, res) => {
-    const result = await axios.get('https://data.primariatm.ro/api/3/action/datastore_search?resource_id=d0134630-84d9-40b8-9bcb-dfdc926d66ab&limit=5');
+    const result = await axios.get('https://data.primariatm.ro/api/3/action/datastore_search?resource_id=d0134630-84d9-40b8-9bcb-dfdc926d66ab&limit=10');
     res.send(JSON.stringify(result.data.result.records));
 })
 

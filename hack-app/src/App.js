@@ -11,6 +11,7 @@ function App() {
     <>
       <h1>Puncte colectare selectiva Timisoara</h1>
       <Map/>
+      <h3>Unde sa duci deseurile cel mai aproape de casa</h3>
       <Table/>
     </>
   );
