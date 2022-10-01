@@ -5,6 +5,7 @@ import { Icon } from 'leaflet';
 import './Map.css';
 
 const Haufe = [45.75951, 21.220871];
+const Punct1 = [45.777078, 21.220764]
 
 function Map() {
   return (
@@ -26,6 +27,17 @@ function Map() {
         >
         <Popup>
           Haufe Hackaton
+        </Popup>
+      </Marker>
+      <Marker
+          position={Punct1}
+          icon={new Icon({
+            iconUrl: "/pin.svg",
+            iconSize: [25, 25]
+          })}
+        >
+        <Popup>
+          Cugir, Aradului
         </Popup>
       </Marker>
     </MapContainer>
